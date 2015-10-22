@@ -41,7 +41,8 @@
  * ************************************************************************************* */
 
 using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PhatWare.WritePad
 {
@@ -88,14 +89,19 @@ namespace PhatWare.WritePad
     {
         public const int LONG_STROKE_MINLENGTH = 200;
 
-        public static Gestures CheckGesture(Gestures type, InkTracePoint[] stroke)
+        public static Gestures CheckGesture(Gestures type, IEnumerable<InkTracePoint> stroke)
         {
-            return CheckGesture(type, stroke, stroke.Length, 1, LONG_STROKE_MINLENGTH);
+            return CheckGesture(type, stroke, 1, LONG_STROKE_MINLENGTH);
         }
 
-        public static Gestures CheckGesture(Gestures type, InkTracePoint[] stroke, int len, int nScale, int nMinLen)
+        public static Gestures CheckGesture(Gestures type, IEnumerable<InkTracePoint> stroke, int nScale, int nMinLen)
         {
-            return GestureApi.HWR_CheckGesture(type, stroke, len, nScale, nMinLen);
+            return CheckGesture(type, stroke.ToArray(), nScale, nMinLen);
+        }
+
+        public static Gestures CheckGesture(Gestures type, InkTracePoint[] stroke, int nScale, int nMinLen)
+        {
+            return GestureApi.HWR_CheckGesture(type, stroke, stroke.Length, nScale, nMinLen);
         }
     }
 }

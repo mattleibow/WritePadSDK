@@ -10,8 +10,6 @@ namespace PhatWare.WritePad
     [Flags]
     public enum RecognitionFlags : uint
     {
-        Default = 0,
-
         SEPLET = 0x00000001,
         USERDICT = 0x00000002,
         MAINDICT = 0x00000004,

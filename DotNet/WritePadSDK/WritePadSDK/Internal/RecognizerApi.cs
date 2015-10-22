@@ -121,7 +121,7 @@ namespace PhatWare.WritePad
         internal static extern int HWR_GetStrokeIDs(IntPtr pRecognizer, int word, int altrnative, out IntPtr strokes);
 
         [DllImport(Constants.LibraryName, EntryPoint = "HWR_SetRecognitionFlags")]
-        internal static extern uint HWR_SetRecognitionFlags(IntPtr pRecognizer, RecognitionFlags newFlags);
+        internal static extern RecognitionFlags HWR_SetRecognitionFlags(IntPtr pRecognizer, RecognitionFlags newFlags);
 
         [DllImport(Constants.LibraryName, EntryPoint = "HWR_GetRecognitionFlags")]
         internal static extern RecognitionFlags HWR_GetRecognitionFlags(IntPtr pRecognizer);

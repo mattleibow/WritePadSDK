@@ -42,6 +42,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PhatWare.WritePad
@@ -188,10 +189,16 @@ namespace PhatWare.WritePad
             }
         }
 
+        public InkStroke AddStroke(IEnumerable<InkTracePoint> strokeData, int width, uint color)
+        {
+            return AddStroke(strokeData.ToArray(), width, color);
+        }
+
         public InkStroke AddStroke(InkTracePoint[] strokeData, int width, uint color)
         {
+            var strokeDataArray = strokeData.ToArray();
             var newIndex = StrokeCount;
-            InkApi.INK_AddStroke(nativeHandle, strokeData, strokeData.Length, width, color);
+            InkApi.INK_AddStroke(nativeHandle, strokeDataArray, strokeDataArray.Length, width, color);
             return new InkStroke(this, newIndex, width, color);
         }
 

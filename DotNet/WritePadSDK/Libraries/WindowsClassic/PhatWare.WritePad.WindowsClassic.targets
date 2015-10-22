@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <WritePadRecoImported>true</WritePadRecoImported>
+    <WritePadRecoPath>$(MSBuildThisFileDirectory)$(Platform)\WritePadReco.dll</WritePadRecoPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(WritePadRecoPath)">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+  <Target Name="EnsureWritePadRecoAvailable" BeforeTargets="BeforeBuild">
+    <Error Condition="!Exists('$(WritePadRecoPath)')" Text="Unable to find the WritePad assembly for platform '$(Platform)' at the location '$(MSBuildThisFileDirectory)$(Platform)\WritePadReco.dll'. Currently supported platforms: Win32, x86 and x64." />
+  </Target>
+  
+</Project>

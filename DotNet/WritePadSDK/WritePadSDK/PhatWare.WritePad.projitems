@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1a9d97cd-0618-472d-8a12-11275282d37d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PhatWare.WritePad</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\GestureApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\InkApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\RecognizerApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\RecognizerControlFlags.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internal\SpellCheckFlags.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GestureRecognizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Language.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Recognizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Brazilian.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Danish.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Dutch.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\English.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\EnglishUK.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Finnish.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\French.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\German.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Indonesian.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Italian.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\MedicalUS.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Norwegian.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Portuguese.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Spanish.dct" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Dictionaries\Swedish.dct" />
+  </ItemGroup>
+</Project>

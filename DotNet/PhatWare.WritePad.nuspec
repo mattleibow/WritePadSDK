@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>PhatWare.WritePad</id>
+        <version>1.0.0</version>
+        <title>PhatWare WritePad SDK</title>
+        <authors>PhatWare Corp.</authors>
+        <licenseUrl>http://www.phatware.com/index.php?q=page/legal</licenseUrl>
+        <projectUrl>http://www.phatware.com/index.php?q=page/products/developers</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>WritePad is a natural, style, writer and lexicon independent multiplatform handwriting recognition technology.</description>
+        <frameworkAssemblies>
+            <!-- no managed dependencies -->
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <!-- Managed Assemblies -->
+        <!-- Xamarin.Android -->
+        <file src="WritePadSDK\WritePadSDK.Android\bin\Release\PhatWare.WritePad.Android.dll" target="lib\MonoAndroid\PhatWare.WritePad.Android.dll" />
+        <file src="WritePadSDK\WritePadSDK.Android\bin\Release\PhatWare.WritePad.Android.xml" target="lib\MonoAndroid\PhatWare.WritePad.Android.xml" />
+        <!-- Xamarin.iOS -->
+        <file src="WritePadSDK\WritePadSDK.iOS\bin\Release\PhatWare.WritePad.iOS.dll" target="lib\XamariniOS\PhatWare.WritePad.iOS.dll" />
+        <file src="WritePadSDK\WritePadSDK.iOS\bin\Release\PhatWare.WritePad.iOS.xml" target="lib\XamariniOS\PhatWare.WritePad.iOS.xml" />
+        <!-- Windows Classic (Forms/WPF) -->
+        <file src="WritePadSDK\WritePadSDK.WindowsClassic\bin\Release\PhatWare.WritePad.WindowsClassic.dll" target="lib\net45\PhatWare.WritePad.WindowsClassic.dll" />
+        <file src="WritePadSDK\WritePadSDK.WindowsClassic\bin\Release\PhatWare.WritePad.WindowsClassic.xml" target="lib\net45\PhatWare.WritePad.WindowsClassic.xml" />
+        <!-- Windows Runtime (Windows Phone 8.1/Windows 8.1) -->
+        <file src="WritePadSDK\WritePadSDK.WindowsRuntime\bin\Release\PhatWare.WritePad.WindowsRuntime.dll" target="lib\netcore\PhatWare.WritePad.WindowsRuntime.dll" />
+        <file src="WritePadSDK\WritePadSDK.WindowsRuntime\bin\Release\PhatWare.WritePad.WindowsRuntime.xml" target="lib\netcore\PhatWare.WritePad.WindowsRuntime.xml" />
+        
+        <!-- Native Assemblies -->
+        <!-- Windows Classic -->
+        <file src="Libraries\WindowsClassic\PhatWare.WritePad.WindowsClassic.targets" target="build\net45\PhatWare.WritePad.targets" />
+        <file src="Libraries\WindowsClassic\x64\WritePadReco.dll" target="build\net45\x64\WritePadReco.dll" />
+        <file src="Libraries\WindowsClassic\x86\WritePadReco.dll" target="build\net45\x86\WritePadReco.dll" />
+        <!-- Windows Runtime (Store) -->
+        <file src="Libraries\WindowsRuntime\WindowsStore\PhatWare.WritePad.WindowsStore.targets" target="build\win\PhatWare.WritePad.targets" />
+        <file src="Libraries\WindowsRuntime\WindowsStore\ARM\WritePadReco.dll" target="build\win\ARM\WritePadReco.dll" />
+        <file src="Libraries\WindowsRuntime\WindowsStore\x64\WritePadReco.dll" target="build\win\x64\WritePadReco.dll" />
+        <file src="Libraries\WindowsRuntime\WindowsStore\x86\WritePadReco.dll" target="build\win\x86\WritePadReco.dll" />
+        <!-- Windows Runtime (Phone) -->
+        <file src="Libraries\WindowsRuntime\WindowsPhone\PhatWare.WritePad.WindowsPhone.targets" target="build\wpa\PhatWare.WritePad.targets" />
+        <file src="Libraries\WindowsRuntime\WindowsPhone\ARM\WritePadReco.dll" target="build\wpa\ARM\WritePadReco.dll" />
+        <file src="Libraries\WindowsRuntime\WindowsPhone\x86\WritePadReco.dll" target="build\wpa\x86\WritePadReco.dll" />
+        
+        <!-- NuGet Scripts -->
+        <!-- Windows Runtime (Store) -->
+        <file src="NuGet\tools\win\install.ps1" target="tools\win\install.ps1" />
+        <file src="NuGet\tools\win\uninstall.ps1" target="tools\win\uninstall.ps1" />
+        <!-- Windows Runtime (Phone) -->
+        <file src="NuGet\tools\wpa\install.ps1" target="tools\wpa\install.ps1" />
+        <file src="NuGet\tools\wpa\uninstall.ps1" target="tools\wpa\uninstall.ps1" />
+    </files>
+</package>

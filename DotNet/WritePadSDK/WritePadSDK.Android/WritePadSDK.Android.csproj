@@ -10,12 +10,12 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PhatWare.WritePad</RootNamespace>
-    <AssemblyName>WritePadSDK.Android</AssemblyName>
+    <AssemblyName>PhatWare.WritePad.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\WritePadSDK.Android.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\PhatWare.WritePad.Android.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -48,25 +48,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\arm64-v8a\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\arm64-v8a\libWritePadReco.so">
       <Link>libs\arm64-v8a\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\armeabi-v7a\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\armeabi-v7a\libWritePadReco.so">
       <Link>libs\armeabi-v7a\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\armeabi\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\armeabi\libWritePadReco.so">
       <Link>libs\armeabi\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\mips64\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\mips64\libWritePadReco.so">
       <Link>libs\mips64\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\mips\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\mips\libWritePadReco.so">
       <Link>libs\mips\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\x86\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\x86\libWritePadReco.so">
       <Link>libs\x86\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
-    <EmbeddedNativeLibrary Include="..\Libraries\Android\x86_64\libWritePadReco.so">
+    <EmbeddedNativeLibrary Include="..\..\Libraries\Android\x86_64\libWritePadReco.so">
       <Link>libs\x86_64\libWritePadReco.so</Link>
     </EmbeddedNativeLibrary>
   </ItemGroup>

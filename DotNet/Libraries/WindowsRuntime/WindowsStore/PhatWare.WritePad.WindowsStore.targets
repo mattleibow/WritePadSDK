@@ -3,7 +3,7 @@
 
   <PropertyGroup>
     <WritePadRecoImported>true</WritePadRecoImported>
-    <WritePadRecoPath>$(MSBuildThisFileDirectory)WindowsStore\$(Platform)\WritePadReco.dll</WritePadRecoPath>
+    <WritePadRecoPath>$(MSBuildThisFileDirectory)$(Platform)\WritePadReco.dll</WritePadRecoPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -146,7 +146,7 @@
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
     </SDKReference>
   </ItemGroup>
-  <Import Project="..\..\WritePadSDK\Libraries\WindowsRuntime\PhatWare.WritePad.WindowsStore.targets" />
+  <Import Project="..\..\Libraries\WindowsRuntime\WindowsStore\PhatWare.WritePad.WindowsStore.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

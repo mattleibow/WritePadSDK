@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritePadSDK.WindowsRuntime", "..\..\WritePadSDK\WritePadSDK.WindowsRuntime\WritePadSDK.WindowsRuntime.csproj", "{F640794C-01E1-4A1A-BF1A-187442B411FA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WritePadSDK", "..\..\WritePadSDK\WritePadSDK\WritePadSDK.shproj", "{1A9D97CD-0618-472D-8A12-11275282D37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritePadSDKWindowsPhoneSample", "WritePadSDKWindowsPhoneSample.csproj", "{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\WritePadSDK\WritePadSDK\PhatWare.WritePad.projitems*{f640794c-01e1-4a1a-bf1a-187442b411fa}*SharedItemsImports = 4
+		..\..\WritePadSDK\WritePadSDK\PhatWare.WritePad.projitems*{1a9d97cd-0618-472d-8a12-11275282d37d}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Debug|x86.Build.0 = Debug|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|ARM.Build.0 = Release|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|x86.ActiveCfg = Release|Any CPU
+		{F640794C-01E1-4A1A-BF1A-187442B411FA}.Release|x86.Build.0 = Release|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|ARM.ActiveCfg = Debug|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|ARM.Build.0 = Debug|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|ARM.Deploy.0 = Debug|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|x86.ActiveCfg = Debug|x86
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|x86.Build.0 = Debug|x86
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Debug|x86.Deploy.0 = Debug|x86
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|ARM.ActiveCfg = Release|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|ARM.Build.0 = Release|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|ARM.Deploy.0 = Release|ARM
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|x86.ActiveCfg = Release|x86
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|x86.Build.0 = Release|x86
+		{7F7D2834-A8C2-446B-A7C6-59FDC39A2F82}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -109,6 +109,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\menu\MainMenu.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WritePadSDK\WritePadSDK.Android\WritePadSDK.Android.csproj">
+      <Project>{914229e5-d5bd-4cb2-b976-c7dac44c7992}</Project>
+      <Name>WritePadSDK.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

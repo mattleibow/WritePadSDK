@@ -1,6 +1,7 @@
 @echo off
 
 rem Build the library
+nuget restore WritePadSDK.sln
 msbuild WritePadSDK.sln /p:Configuration=Release
 
 rem Create the NuGet

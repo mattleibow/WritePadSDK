@@ -33,9 +33,17 @@ packages:
 samples: 
   - name: Android Sample
     path: WritePadSDKSamples/WritePadSDKAndroidSample/WritePadSDKAndroidSample.sln
+    removeProjects:
+      - WritePadSDK
   - name: iOS Sample
     path: WritePadSDKSamples/WritePadSDKiOSSample/WritePadSDKiOSSample.sln
+    removeProjects:
+      - WritePadSDK
   - name: Windows Store Sample
     path: WritePadSDKSamples/WritePadSDKWindowsStoreSample/WritePadSDKWindowsStoreSample.sln
+    removeProjects:
+      - WritePadSDK
   - name: Windows Phone Sample
     path: WritePadSDKSamples/WritePadSDKWindowsPhoneSample/WritePadSDKWindowsPhoneSample.sln
+    removeProjects:
+      - WritePadSDK

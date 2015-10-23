@@ -143,6 +143,9 @@ publish/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
 
+# Xamarin Components
+*.xam
+
 # Windows Azure Build Output
 csx/
 *.build.csdef

@@ -1,0 +1,41 @@
+%YAML 1.2
+---
+
+id: PhatWare.WritePad
+name: PhatWare WritePad SDK
+version: 1.0.0
+publisher: PhatWare Corp.
+publisher-url: http://www.phatware.com
+summary: WritePad is a natural, style, writer and lexicon independent multiplatform handwriting recognition technology.
+
+getting-started: Component/GettingStarted.md
+details: Component/Details.md
+license: Component/License.md
+
+icons: 
+  - Images/Icon_128x128.png
+  - Images/Icon_512x512.png
+
+no_build: true
+is_shell: true
+libraries: 
+  android: WritePadSDK/WritePadSDK.Android/bin/Release/PhatWare.WritePad.Android.dll
+  ios-unified: WritePadSDK/WritePadSDK.iOS/bin/Release/PhatWare.WritePad.iOS.dll
+  winphone-8.1: WritePadSDK/WritePadSDK.WindowsRuntime/bin/Release/PhatWare.WritePad.WindowsRuntime.dll
+  win8: WritePadSDK/WritePadSDK.WindowsRuntime/bin/Release/PhatWare.WritePad.WindowsRuntime.dll
+local-nuget-repo: ./
+packages:
+  android: PhatWare.WritePad, Version=1.0.0
+  ios-unified: PhatWare.WritePad, Version=1.0.0
+  winphone-8.1: PhatWare.WritePad, Version=1.0.0
+  win8: PhatWare.WritePad, Version=1.0.0
+
+samples: 
+  - name: Android Sample
+    path: WritePadSDKSamples/WritePadSDKAndroidSample/WritePadSDKAndroidSample.sln
+  - name: iOS Sample
+    path: WritePadSDKSamples/WritePadSDKiOSSample/WritePadSDKiOSSample.sln
+  - name: Windows Store Sample
+    path: WritePadSDKSamples/WritePadSDKWindowsStoreSample/WritePadSDKWindowsStoreSample.sln
+  - name: Windows Phone Sample
+    path: WritePadSDKSamples/WritePadSDKWindowsPhoneSample/WritePadSDKWindowsPhoneSample.sln

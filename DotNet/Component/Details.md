@@ -1,0 +1,1 @@
+# PhatWare.WritePad details

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="17">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="17">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="16">
             <objects>
                 <navigationController definesPresentationContext="YES" id="17" sceneMemberID="viewController">
@@ -17,107 +17,112 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="1"/>
+            <point key="canvasLocation" x="16" y="3"/>
         </scene>
+        <!--WritePad-->
         <scene sceneID="22">
             <objects>
-                <viewController id="19" sceneMemberID="viewController" customClass="MainViewController">
+                <viewController id="19" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="14"/>
                         <viewControllerLayoutGuide type="bottom" id="15"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="24">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="708" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="708">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="744" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
-                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="744">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                        <color key="backgroundColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="758"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <constraints>
-                                            <constraint id="758" firstItem="744" firstAttribute="height" constant="150"/>
-                                        </constraints>
                                     </textView>
                                     <view contentMode="scaleToFill" id="764" customClass="InkView" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="150" width="320" height="310"/>
+                                        <rect key="frame" x="0.0" y="150" width="600" height="342"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="744" firstAttribute="leading" secondItem="708" secondAttribute="leading" constant="0.0" id="750"/>
-                                    <constraint firstItem="744" firstAttribute="top" secondItem="708" secondAttribute="top" constant="0.0" id="751"/>
-                                    <constraint firstItem="708" firstAttribute="trailing" secondItem="744" secondAttribute="trailing" constant="0.0" id="752"/>
-                                    <constraint firstItem="764" firstAttribute="leading" secondItem="708" secondAttribute="leading" constant="0.0" id="765"/>
-                                    <constraint firstItem="764" firstAttribute="top" secondItem="744" secondAttribute="bottom" constant="0.0" id="766"/>
-                                    <constraint firstItem="708" firstAttribute="trailing" secondItem="764" secondAttribute="trailing" constant="0.0" id="767"/>
-                                    <constraint firstItem="708" firstAttribute="bottom" secondItem="764" secondAttribute="bottom" constant="0.0" id="768"/>
+                                    <constraint firstItem="744" firstAttribute="leading" secondItem="708" secondAttribute="leading" id="750"/>
+                                    <constraint firstItem="744" firstAttribute="top" secondItem="708" secondAttribute="top" id="751"/>
+                                    <constraint firstAttribute="trailing" secondItem="744" secondAttribute="trailing" id="752"/>
+                                    <constraint firstItem="764" firstAttribute="top" secondItem="744" secondAttribute="bottom" constant="0.0" id="770"/>
+                                    <constraint firstItem="764" firstAttribute="leading" secondItem="708" secondAttribute="leading" constant="0.0" id="771"/>
+                                    <constraint firstItem="708" firstAttribute="trailing" secondItem="764" secondAttribute="trailing" constant="0.0" id="772"/>
+                                    <constraint firstItem="708" firstAttribute="bottom" secondItem="764" secondAttribute="bottom" constant="0.0" id="774"/>
                                 </constraints>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="561" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="527" width="320" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="561">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="695" translatesAutoresizingMaskIntoConstraints="NO"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="695"/>
                                     <barButtonItem title="Recognize" id="562"/>
                                     <barButtonItem title="Clear" id="563"/>
-                                    <barButtonItem title="Language" id="564" width="0.0"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="696" translatesAutoresizingMaskIntoConstraints="NO"/>
+                                    <barButtonItem title="Language" id="564"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="696"/>
                                 </items>
                             </toolbar>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint id="735" constant="0.0" firstItem="24" firstAttribute="trailing" secondItem="708" secondAttribute="trailing"/>
-                            <constraint id="736" constant="44" firstItem="24" firstAttribute="bottom" secondItem="708" secondAttribute="bottom"/>
-                            <constraint firstItem="708" firstAttribute="leading" secondItem="24" secondAttribute="leading" constant="0.0" id="740"/>
-                            <constraint firstItem="708" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="0.0" id="741"/>
+                            <constraint firstAttribute="trailing" secondItem="708" secondAttribute="trailing" id="735"/>
+                            <constraint firstItem="708" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="740"/>
+                            <constraint firstItem="708" firstAttribute="top" secondItem="14" secondAttribute="bottom" id="741"/>
+                            <constraint firstItem="15" firstAttribute="top" secondItem="561" secondAttribute="bottom" id="2CP-vk-PWb"/>
+                            <constraint firstItem="561" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="Top-Ik-MkL"/>
+                            <constraint firstItem="561" firstAttribute="top" secondItem="708" secondAttribute="bottom" id="Wpt-Eh-hOo"/>
+                            <constraint firstAttribute="trailing" secondItem="561" secondAttribute="trailing" id="fuY-zi-uj4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WritePad" id="23">
-                        <barButtonItem id="174" translatesAutoresizingMaskIntoConstraints="NO" key="rightBarButtonItem" title="Options">
+                        <barButtonItem key="rightBarButtonItem" title="Options" id="174">
                             <connections>
-                                <segue id="689" destination="29" kind="push" identifier="showOptions"/>
+                                <segue destination="29" kind="show" identifier="showOptions" id="689"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="recognizedText" destination="744" id="name-outlet-744"/>
-                        <outlet property="recognizeAllButton" destination="562" id="name-outlet-562"/>
                         <outlet property="clearButton" destination="563" id="name-outlet-563"/>
                         <outlet property="languageButton" destination="564" id="name-outlet-564"/>
                         <outlet property="optionsButton" destination="174" id="name-outlet-174"/>
+                        <outlet property="recognizeAllButton" destination="562" id="name-outlet-562"/>
+                        <outlet property="recognizedText" destination="744" id="name-outlet-744"/>
                         <outlet property="inkView" destination="764" id="name-outlet-764"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="429" y="-1"/>
+            <point key="canvasLocation" x="792" y="3"/>
         </scene>
+        <!--Recognizer Options-->
         <scene sceneID="28">
             <objects>
-                <tableViewController id="29" sceneMemberID="viewController" customClass="OptionsViewController">
+                <tableViewController id="29" customClass="OptionsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="30">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="33" reuseIdentifier="OptionsCell" style="IBUITableViewCellStyleDefault" textLabel="166">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OptionsCell" textLabel="166" style="IBUITableViewCellStyleDefault" id="33">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="33" id="34">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="166">
-                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="560" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -129,30 +134,11 @@
                             <outlet property="delegate" destination="29" id="32"/>
                         </connections>
                     </tableView>
-                    <navigationItem title="Recognizer Options" id="172" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
+                    <navigationItem key="navigationItem" title="Recognizer Options" id="172"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="3"/>
+            <point key="canvasLocation" x="1547" y="3"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
-    <resources>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-60.png" width="120" height="120"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-72.png" width="72" height="72"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-76.png" width="76" height="76"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-Small-40.png" width="40" height="40"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-Small-50.png" width="50" height="50"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon-Small.png" width="29" height="29"/>
-        <image name="Images.xcassets/AppIcons.appiconset/Icon.png" width="57" height="57"/>
-        <image name="Images.xcassets/AppIcons.appiconset/writepad-120.png" width="120" height="120"/>
-        <image name="Images.xcassets/AppIcons.appiconset/writepad-180.png" width="180" height="180"/>
-        <image name="Images.xcassets/AppIcons.appiconset/writepad-58.png" width="58" height="58"/>
-        <image name="Images.xcassets/AppIcons.appiconset/writepad-87.png" width="87" height="87"/>
-        <image name="Default-568h.png" width="640" height="1136"/>
-    </resources>
 </document>

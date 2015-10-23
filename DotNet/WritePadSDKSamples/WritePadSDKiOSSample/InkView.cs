@@ -54,8 +54,7 @@ using System.ComponentModel;
 namespace PhatWare.WritePad
 {
     [DesignTimeVisible(true), Category("Controls")]
-    [Register("InkView")]
-    public class InkView : UIView
+    public partial class InkView : UIView
     {
         private Ink ink;
         private InkStroke mCurrStroke;

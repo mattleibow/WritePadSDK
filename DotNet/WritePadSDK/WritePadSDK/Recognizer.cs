@@ -80,7 +80,7 @@ namespace PhatWare.WritePad
     }
     public class Recognizer
     {
-        private static readonly Assembly CurrentAssembly = Assembly.GetAssembly(typeof(Recognizer));
+        private static readonly Assembly CurrentAssembly = typeof(Recognizer).GetTypeInfo().Assembly;
 
         public const string EmbeddedDictionariesPrefix = "PhatWare.WritePad.Dictionaries";
 
@@ -98,7 +98,7 @@ namespace PhatWare.WritePad
         private bool disposed = false;
 
         public Recognizer(Language language)
-            : this(language, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))
+            : this(language, Constants.DefaultUserRoot)
         {
         }
 

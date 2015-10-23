@@ -46,10 +46,16 @@ namespace PhatWare.WritePad
     {
 #if __IOS__
         internal const string LibraryName = "__Internal";
+        internal static string DefaultUserRoot = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 #elif __ANDROID__
         internal const string LibraryName = "libWritePadReco.so";
+        internal static string DefaultUserRoot = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 #elif __WINDOWS_FORMS__
         internal const string LibraryName = "WritePadReco.dll";
+        internal static string DefaultUserRoot = System.AppDomain.CurrentDomain.BaseDirectory;
+#elif __WINDOWS_RUNTIME__
+        internal const string LibraryName = "WritePadReco.dll";
+        internal static string DefaultUserRoot = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
 #endif
     }
 }

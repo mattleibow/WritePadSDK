@@ -47,7 +47,7 @@ namespace PhatWare.WritePad
 {
     internal static class GestureApi
     {
-        [DllImport(Constants.LibraryName, EntryPoint = "HWR_CheckGesture")]
+        [DllImport(Constants.LibraryName, EntryPoint = "HWR_CheckGesture", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
         internal static extern Gestures HWR_CheckGesture(Gestures type, InkTracePoint[] stroke, int len, int nScale, int nMinLen);
     }
 }
